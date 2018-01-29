@@ -1,0 +1,53 @@
+body {
+  /*margin-left: 2%;*/
+  font-family: "PT Sans";
+  /*background-color: black;*/
+  /*color: white;*/
+}
+.wrapper {
+  transition: all .2s ease-in-out;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 10px;
+  grid-template-areas:
+  "hd0 hd1 hd1 hd1 hd2 hd2 hd2 hd2 hd2 ."
+  "b1 a a a a a a a a ."
+  "b1 b b b b b b c c ."
+  "b1 d d d d d d d d ."
+  "b1 e e e e e e e e ."
+  ". f f f f f f f f ."
+  ". ft ft ft ft ft ft ft ft .";
+}
+.title {
+  background: black;
+  color: white;
+  padding: 2%;
+}
+.title h2, h4 {
+  margin: 10%;
+}
+.head1 {
+  grid-area: hd1;
+  background: red;
+}
+.head2 {
+  grid-area: hd2;
+  background: blue;
+}
+.banner {
+  grid-area: a;
+  background: green;
+}
+.contentA{
+  grid-area: b;
+  background: pink;
+}
+.contentB{
+  grid-area: c;
+  background: cyan;
+}
+.contentC{
+  grid-area: d;
+  background: blue;
+}
