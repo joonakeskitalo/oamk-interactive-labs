@@ -2,7 +2,7 @@
   transition: all .2s ease-in-out;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  grid-auto-rows: minmax(150px, auto);
+  grid-auto-rows: minmax(auto, auto);
   grid-gap: 10px;
   grid-template-areas:
   ". header header header header header header header header ."
@@ -33,6 +33,132 @@
   ". ya yb yc yd ye yf yg yh ."
   ". za zb zc zd ze zf zg zh .";
 }
+
+@media screen and (max-width: 999px) {
+  .wrapper {
+    grid-template-columns: repeat(8, 1fr);
+    margin-left: 2%;
+    margin-right: 2%;
+    grid-template-areas:
+    "header header header header header header header header"
+    "aa ab ac ad ae af ag ah"
+    "ba bb bc bd be bf bg bh"
+    "ca cb cc cd ce cf cg ch"
+    "da db dc dd de df dg dh"
+    "ea eb ec ed ee ef eg eh"
+    "fa fb fc fd fe ff fg fh"
+    "ga gb gc gd ge gf gg gh"
+    "ha hb hc hd he hf hg hh"
+    "ia ib ic id ie if ig ih"
+    "ja jb jc jd je jf jg jh"
+    "ka kb kc kd ke kf kg kh"
+    "la lb lc ld le lf lg lh"
+    "ma mb mc md me mf mg mh"
+    "na nb nc nd ne nf ng nh"
+    "oa ob oc od oe of og oh"
+    "pa pb pc pd pe pf pg ph"
+    "qa qb qc qd qe qf qg qh"
+    "ra rb rc rd re rf rg rh"
+    "sa sb sc sd se sf sg sh"
+    "ta tb tc td te tf tg th"
+    "ua ub uc ud ue uf ug uh"
+    "va vb vc vd ve vf vg vh"
+    "wa wb wc wd we wf wg wh"
+    "xa xb xc xd xe xf xg xh"
+    "ya yb yc yd ye yf yg yh"
+    "za zb zc zd ze zf zg zh";
+  }
+}
+
+
+@media only screen and (max-width: 650px) {
+  .wrapper {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(auto, auto);
+    margin-left: 2%;
+    margin-right: 2%;
+    grid-template-areas:
+    "header header header header"
+    "aa ab ac ad"
+    "ae af ag ah"
+    "ba bb bc bd"
+    "be bf bg bh"
+    "ca cb cc cd"
+    "ce cf cg ch"
+    "da db dc dd"
+    "de df dg dh"
+    "ea eb ec ed"
+    "ee ef eg eh"
+    "fa fb fc fd"
+    "fe ff fg fh"
+    "ga gb gc gd"
+    "ge gf gg gh"
+    "ha hb hc hd"
+    "he hf hg hh"
+    "ia ib ic id"
+    "ie if ig ih"
+    "ja jb jc jd"
+    "je jf jg jh"
+    "ka kb kc kd"
+    "ke kf kg kh"
+    "la lb lc ld"
+    "le lf lg lh"
+    "ma mb mc md"
+    "me mf mg mh"
+    "na nb nc nd"
+    "ne nf ng nh"
+    "oa ob oc od"
+    "oe of og oh"
+    "pa pb pc pd"
+    "pe pf pg ph"
+    "qa qb qc qd"
+    "qe qf qg qh"
+    "ra rb rc rd"
+    "re rf rg rh"
+    "sa sb sc sd"
+    "se sf sg sh"
+    "ta tb tc td"
+    "te tf tg th"
+    "ua ub uc ud"
+    "ue uf ug uh"
+    "va vb vc vd"
+    "ve vf vg vh"
+    "wa wb wc wd"
+    "we wf wg wh"
+    "xa xb xc xd"
+    "xe xf xg xh"
+    "ya yb yc yd"
+    "ye yf yg yh"
+    "za zb zc zd"
+    "ze zf zg zh";
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(0px, auto);
+    margin-left: 2%;
+    margin-right: 2%;
+    grid-template-areas:
+    "header"
+    "aa""ab""ac""ad""ae""af""ag""ah""ba""bb""bc""bd""be""bf""bg""bh""ca""cb""cc""cd""ce""cf""cg""ch""da""db""dc""dd""de""df""dg""dh""ea""eb""ec""ed""ee""ef""eg""eh""fa""fb""fc""fd""fe""ff""fg""fh""ga""gb""gc""gd""ge""gf""gg""gh""ha""hb""hc""hd""he""hf""hg""hh""ia""ib""ic""id""ie""if""ig""ih""ja""jb""jc""jd""je""jf""jg""jh""ka""kb""kc""kd""ke""kf""kg""kh""la""lb""lc""ld""le""lf""lg""lh""ma""mb""mc""md""me""mf""mg""mh""na""nb""nc""nd""ne""nf""ng""nh""oa""ob""oc""od""oe""of""og""oh""pa""pb""pc""pd""pe""pf""pg""ph""qa""qb""qc""qd""qe""qf""qg""qh""ra""rb""rc""rd""re""rf""rg""rh""sa""sb""sc""sd""se""sf""sg""sh""ta""tb""tc""td""te""tf""tg""th""ua""ub""uc""ud""ue""uf""ug""uh""va""vb""vc""vd""ve""vf""vg""vh""wa""wb""wc""wd""we""wf""wg""wh""xa""xb""xc""xd""xe""xf""xg""xh""ya""yb""yc""yd""ye""yf""yg""yh""za""zb""zc""zd""ze""zf""zg""zh";
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .cAA {grid-area: aa; }
