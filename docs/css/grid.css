@@ -1,0 +1,289 @@
+.wrapper {
+  transition: all .2s ease-in-out;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-auto-rows: minmax(150px, auto);
+  grid-gap: 10px;
+  grid-template-areas:
+  ". header header header header header header header header ."
+  ". aa ab ac ad ae af ag ah ."
+  ". ba bb bc bd be bf bg bh ."
+  ". ca cb cc cd ce cf cg ch ."
+  ". da db dc dd de df dg dh ."
+  ". ea eb ec ed ee ef eg eh ."
+  ". fa fb fc fd fe ff fg fh ."
+  ". ga gb gc gd ge gf gg gh ."
+  ". ha hb hc hd he hf hg hh ."
+  ". ia ib ic id ie if ig ih ."
+  ". ja jb jc jd je jf jg jh ."
+  ". ka kb kc kd ke kf kg kh ."
+  ". la lb lc ld le lf lg lh ."
+  ". ma mb mc md me mf mg mh ."
+  ". na nb nc nd ne nf ng nh ."
+  ". oa ob oc od oe of og oh ."
+  ". pa pb pc pd pe pf pg ph ."
+  ". qa qb qc qd qe qf qg qh ."
+  ". ra rb rc rd re rf rg rh ."
+  ". sa sb sc sd se sf sg sh ."
+  ". ta tb tc td te tf tg th ."
+  ". ua ub uc ud ue uf ug uh ."
+  ". va vb vc vd ve vf vg vh ."
+  ". wa wb wc wd we wf wg wh ."
+  ". xa xb xc xd xe xf xg xh ."
+  ". ya yb yc yd ye yf yg yh ."
+  ". za zb zc zd ze zf zg zh .";
+}
+
+
+.cAA {grid-area: aa; }
+.cAB {grid-area: ab; }
+.cAC {grid-area: ac; }
+.cAD {grid-area: ad; }
+.cAE {grid-area: ae; }
+.cAF {grid-area: af; }
+.cAG {grid-area: ag; }
+.cAH {grid-area: ah; }
+
+.cBA {grid-area: ba; }
+.cBB {grid-area: bb; }
+.cBC {grid-area: bc; }
+.cBD {grid-area: bd; }
+.cBE {grid-area: be; }
+.cBF {grid-area: bf; }
+.cBG {grid-area: bg; }
+.cBH {grid-area: bh; }
+
+.cCA {grid-area: ca; }
+.cCB {grid-area: cb; }
+.cCC {grid-area: cc; }
+.cCD {grid-area: cd; }
+.cCE {grid-area: ce; }
+.cCF {grid-area: cf; }
+.cCG {grid-area: cg; }
+.cCH {grid-area: ch; }
+
+.cDA {grid-area: da; }
+.cDB {grid-area: db; }
+.cDC {grid-area: dc; }
+.cDD {grid-area: dd; }
+.cDE {grid-area: de; }
+.cDF {grid-area: df; }
+.cDG {grid-area: dg; }
+.cDH {grid-area: dh; }
+
+.cAA {grid-area: aa; }
+.cAB {grid-area: ab; }
+.cAC {grid-area: ac; }
+.cAD {grid-area: ad; }
+.cAE {grid-area: ae; }
+.cAF {grid-area: af; }
+.cAG {grid-area: ag; }
+.cAH {grid-area: ah; }
+
+.cEA {grid-area: ea; }
+.cEB {grid-area: eb; }
+.cEC {grid-area: ec; }
+.cED {grid-area: ed; }
+.cEE {grid-area: ee; }
+.cEF {grid-area: ef; }
+.cEG {grid-area: eg; }
+.cEH {grid-area: eh; }
+
+.cFA {grid-area: fa; }
+.cFB {grid-area: fb; }
+.cFC {grid-area: fc; }
+.cFD {grid-area: fd; }
+.cFE {grid-area: fe; }
+.cFF {grid-area: ff; }
+.cFG {grid-area: fg; }
+.cFH {grid-area: fh; }
+
+.cGA {grid-area: ga; }
+.cGB {grid-area: gb; }
+.cGC {grid-area: gc; }
+.cGD {grid-area: gd; }
+.cGE {grid-area: ge; }
+.cGF {grid-area: gf; }
+.cGG {grid-area: gg; }
+.cGH {grid-area: gh; }
+
+.cHA {grid-area: ha; }
+.cHB {grid-area: hb; }
+.cHC {grid-area: hc; }
+.cHD {grid-area: hd; }
+.cHE {grid-area: he; }
+.cHF {grid-area: hf; }
+.cHG {grid-area: hg; }
+.cHH {grid-area: hh; }
+
+.cIA {grid-area: ia; }
+.cIB {grid-area: ib; }
+.cIC {grid-area: ic; }
+.cID {grid-area: id; }
+.cIE {grid-area: ie; }
+.cIF {grid-area: if; }
+.cIG {grid-area: ig; }
+.cIH {grid-area: ih; }
+
+.cJA {grid-area: ja; }
+.cJB {grid-area: jb; }
+.cJC {grid-area: jc; }
+.cJD {grid-area: jd; }
+.cJE {grid-area: je; }
+.cJF {grid-area: jf; }
+.cJG {grid-area: jg; }
+.cJH {grid-area: jh; }
+
+.cKA {grid-area: ka; }
+.cKB {grid-area: kb; }
+.cKC {grid-area: kc; }
+.cKD {grid-area: kd; }
+.cKE {grid-area: ke; }
+.cKF {grid-area: kf; }
+.cKG {grid-area: kg; }
+.cKH {grid-area: kh; }
+
+.cLA {grid-area: la; }
+.cLB {grid-area: lb; }
+.cLC {grid-area: lc; }
+.cLD {grid-area: ld; }
+.cLE {grid-area: le; }
+.cLF {grid-area: lf; }
+.cLG {grid-area: lg; }
+.cLH {grid-area: lh; }
+
+.cMA {grid-area: ma; }
+.cMB {grid-area: mb; }
+.cMC {grid-area: mc; }
+.cMD {grid-area: md; }
+.cME {grid-area: me; }
+.cMF {grid-area: mf; }
+.cMG {grid-area: mg; }
+.cMH {grid-area: mh; }
+
+.cNA {grid-area: na; }
+.cNB {grid-area: nb; }
+.cNC {grid-area: nc; }
+.cND {grid-area: nd; }
+.cNE {grid-area: ne; }
+.cNF {grid-area: nf; }
+.cNG {grid-area: ng; }
+.cNH {grid-area: nh; }
+
+.cOA {grid-area: oa; }
+.cOB {grid-area: ob; }
+.cOC {grid-area: oc; }
+.cOD {grid-area: od; }
+.cOE {grid-area: oe; }
+.cOF {grid-area: of; }
+.cOG {grid-area: og; }
+.cOH {grid-area: oh; }
+
+.cPA {grid-area: pa; }
+.cPB {grid-area: pb; }
+.cPC {grid-area: pc; }
+.cPD {grid-area: pd; }
+.cPE {grid-area: pe; }
+.cPF {grid-area: pf; }
+.cPG {grid-area: pg; }
+.cPH {grid-area: ph; }
+
+.cQA {grid-area: qa; }
+.cQB {grid-area: qb; }
+.cQC {grid-area: qc; }
+.cQD {grid-area: qd; }
+.cQE {grid-area: qe; }
+.cQF {grid-area: qf; }
+.cQG {grid-area: qg; }
+.cQH {grid-area: qh; }
+
+.cRA {grid-area: ra; }
+.cRB {grid-area: rb; }
+.cRC {grid-area: rc; }
+.cRD {grid-area: rd; }
+.cRE {grid-area: re; }
+.cRF {grid-area: rf; }
+.cRG {grid-area: rg; }
+.cRH {grid-area: rh; }
+
+.cSA {grid-area: sa; }
+.cSB {grid-area: sb; }
+.cSC {grid-area: sc; }
+.cSD {grid-area: sd; }
+.cSE {grid-area: se; }
+.cSF {grid-area: sf; }
+.cSG {grid-area: sg; }
+.cSH {grid-area: sh; }
+
+.cTA {grid-area: ta; }
+.cTB {grid-area: tb; }
+.cTC {grid-area: tc; }
+.cTD {grid-area: td; }
+.cTE {grid-area: te; }
+.cTF {grid-area: tf; }
+.cTG {grid-area: tg; }
+.cTH {grid-area: th; }
+
+.cUA {grid-area: ua; }
+.cUB {grid-area: ub; }
+.cUC {grid-area: uc; }
+.cUD {grid-area: ud; }
+.cUE {grid-area: ue; }
+.cUF {grid-area: uf; }
+.cUG {grid-area: ug; }
+.cUH {grid-area: uh; }
+
+.cVA {grid-area: va; }
+.cVB {grid-area: vb; }
+.cVC {grid-area: vc; }
+.cVD {grid-area: vd; }
+.cVE {grid-area: ve; }
+.cVF {grid-area: vf; }
+.cVG {grid-area: vg; }
+.cVH {grid-area: vh; }
+
+.cWA {grid-area: Wa; }
+.cWB {grid-area: Wb; }
+.cWC {grid-area: Wc; }
+.cWD {grid-area: Wd; }
+.cWE {grid-area: We; }
+.cWF {grid-area: Wf; }
+.cWG {grid-area: Wg; }
+.cWH {grid-area: Wh; }
+
+.cXA {grid-area: xa; }
+.cXB {grid-area: xb; }
+.cXC {grid-area: xc; }
+.cXD {grid-area: xd; }
+.cXE {grid-area: xe; }
+.cXF {grid-area: xf; }
+.cXG {grid-area: xg; }
+.cXH {grid-area: xh; }
+
+.cYA {grid-area: ya; }
+.cYB {grid-area: yb; }
+.cYC {grid-area: yc; }
+.cYD {grid-area: yd; }
+.cYE {grid-area: ye; }
+.cYF {grid-area: yf; }
+.cYG {grid-area: yg; }
+.cYH {grid-area: yh; }
+
+.cZA {grid-area: za; }
+.cZB {grid-area: zb; }
+.cZC {grid-area: zc; }
+.cZD {grid-area: zd; }
+.cZE {grid-area: ze; }
+.cZF {grid-area: zf; }
+.cZG {grid-area: zg; }
+.cZH {grid-area: zh; }
+
+
+.p1 {grid-column-end: span 1; }
+.p2 {grid-column-end: span 2; }
+.p3 {grid-column-end: span 3; }
+.p4 {grid-column-end: span 4; }
+.p5 {grid-column-end: span 5; }
+.p6 {grid-column-end: span 6; }
+.p7 {grid-column-end: span 7; }
+.p8 {grid-column-end: span 8; }

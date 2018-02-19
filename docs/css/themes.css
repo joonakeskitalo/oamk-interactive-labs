@@ -1,0 +1,35 @@
+/* -- [ light blue theme (default) ] ---------- */
+
+body, #header.lightblue {
+    background: #ddf;
+    height: 80px;
+    margin-bottom: 20px;
+    width: 300px;
+}
+.nav, #menu.lightblue {
+    background: #ddf;
+}
+
+/* -- [ light red theme ] ---------- */
+
+body.lightred {
+    background: #fdd;
+    height: 95px;
+    margin-bottom: 10px;
+    width: 400px;
+}
+.nav.lightred {
+    background: #fdd;
+}
+
+/* -- [ light green theme ] ---------- */
+
+body.lightgreen {
+    background: #dfd;
+    height: 72px;
+    margin-bottom: 15px;
+    width: 290px;
+}
+.nav.lightgreen {
+    background: #dfd;
+}

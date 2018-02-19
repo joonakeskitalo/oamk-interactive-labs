@@ -26,34 +26,16 @@ function drawSomething() {
   context.stroke();
   context.closePath();
 }
-
-
 // Lab 4 part 1 - Drawing application with lines
 function drawLine() {
   var canvas = document.getElementById("drawCanvas");
   var context = canvas.getContext("2d");
-
-
   canvas.addEventListener('mousemove', onMouseMove, false);
   canvas.addEventListener('click', onClick, false);
-
-
-
   // var start = event.offsetX, event.offsetY;
   // var startY =
   // var end = event.offsetX, event.offsetY;
-
 }
-
-
-
-
-
-
-
-
-
-
 
 function start() {
   window.setInterval(drawSomething, 300);
