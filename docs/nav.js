@@ -4,6 +4,5 @@ document.write('<div class="nav">\
   <a class="navLinks" href="labs.html" title="">Labs</a>\
   <a class="navLinks" href="about.html" title="">About</a>\
   <a class="navLinks" href="https://github.com/joonakeskitalo?tab=repositories" title="">Github</a>\
-  <a class="navLinks" href="" title="">t6kejo00</a>\
   </div>\
   ');
