@@ -5,7 +5,7 @@ document.write('<meta charset="utf-8">\
   <link rel="stylesheet" href="css/normalize.css">\
   <link rel="stylesheet" href="css/font.css">\
   <link rel="stylesheet" href="css/grid.css">\
-  <link rel="stylesheet" href="css/style.css">\
+  <link rel="stylesheet" href="css/style2.css">\
   <script type="text/javascript" src="js/websocket_chat.js"></script>\
   <!-- jQuery -->\
   <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="\
