@@ -19,6 +19,7 @@ video {
   width: 100%;
 }
 
+
 /*Anti Reset*/
 
 h1,
@@ -123,7 +124,7 @@ ul ol {
   text-decoration: none;
   height: 34px;
   user-select: none;
-  outline:none;
+  outline: none;
 }
 
 .button:hover {
@@ -179,4 +180,11 @@ ul ol {
 
 #myLog {
   margin: 1%;
+}
+
+
+/* Canvas */
+
+#canvas {
+  border: 1px solid black;
 }

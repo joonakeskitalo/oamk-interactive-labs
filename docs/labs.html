@@ -39,7 +39,7 @@
     <div class="cAG block" style="background: yellow; width: 50px; height: 50px;"></div>
     <div class="cAH block" style="background: black; width: 50px; height: 50px;"></div>
     <div class="cBA p4">
-      <h2>Lab 1.1 Definitions</h2>
+      <h3>Lab 1.1 Definitions</h3>
       <br>
       <ul>
         <li><strong>a) HTML</strong> <em>Hypertext Markup Language</em> is a markup language used to define webpages and their content.</li>
@@ -52,7 +52,7 @@
     </div>
     <!-- Lab1,2 Coding conventions -->
     <div class="cBE p4">
-      <h2>Lab 1.2 Coding conventions</h2>
+      <h3>Lab 1.2 Coding conventions</h3>
       <br>
       <ul>
         <li><strong>Naming</strong>: name the files, functions, classes etc. in the same manner consistently, so you or the next author of the code will have an easier time reading and understanding your code. </li>
@@ -64,7 +64,7 @@
       </div>
       <!-- Lab1,5 Dynamic HTML -->
       <div class="cCA p3">
-        <h2>Lab 1.5 Dynamic HTML</h2>
+        <h3>Lab 1.5 Dynamic HTML</h3>
         <input class="input" id="nameInput" placeholder="Name" type="text"></input>
         <button class="button" onclick="addName(name)">Add</button>
         <p id="list"></p>
@@ -110,8 +110,7 @@
       <div class="cFE p4">
 
 
-        <b>Lab 2.4 c)</b>
-        <br><br>
+        <h3>Lab 2.4 c)</h3>
         <b>HTML5 specification introduces new semantic elements. One of them is a figure element. Can you say why you should use it in addition to standard img elements?</b>
       </div>
 
@@ -132,12 +131,13 @@
         </div>
         <input class="chatInput input" id="chatForm" type="form" name="" placeholder="Send a message">
         <button class="chatButton button" onclick="sendMessage()">Send</button>
-      </div>
-
-      <div class="cHE p3">
+        <br><br>
         <h3>Lab 3.2 Local Storage</h3>
         <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam quis risus eget urna mollis ornare vel eu leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla.</p>
-        <br><br><br>
+      </div>
+
+      <div class="cHE p4">
+        <!-- <br><br><br> -->
         <h3>Lab 3.3 Audio element</h3>
         <audio id="audio" src="http://stream.basso.fi:8000/stream"></audio>
         <button class="button" onclick="togglePlay()">Play</button>
@@ -150,44 +150,75 @@
         <button class="button" onclick="togglePlayVideo()">Play</button>
         <input type="range" onchange="setVolumeVideo()" id='volume2' min=0 max=1 step=0.01 value='1'>
 
-
-
-
-
-
-
       </div>
 
 
+
+
+
+
+      <div class="cIA p4">
+        <h1>Labs 4</h1>
+        <h3>Lab 4.1 Canvas drawing application</h3>
+        <!-- <canvas id="tutorial" width="400px" height="300px"></canvas> -->
+        <canvas id="canvas" height="250px" width="450px"></canvas>
+      </div>
+
+      <div class="cIE p4">
+        <h3>Lab 4.2 Canvas Game</h3>
+        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Etiam porta sem malesuada magna mollis euismod. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+      </div>
+
+
+
+      <div class="cJA p4">
+        <h1>Labs 5</h1>
+        <h3>Lab 5.1</h3>
+
+        <b>What can you do with jQuery?</b>
+        <p>jQuery makes it easier to do DOM element selections, traversal and manipulation. It can be used to create animations, handle events and develop Ajax applications.</p>
+        <br>
+        <b>How it can help as a web developer?</b>
+        <p>jQuery makes common tasks much simpler to do compared to using just plain JavScript. It has a lot of built-in functionality such as Ajax features, JSON parsin and DOM manipulation.</p>
+
+        <br>
+        <b>If you think our earlier participant list app, in what kind of issues you could use
+        jQuery?</b>
+        <p></p>
+
+        <br>
+
+
+      </div>
+<div class="cJE p4">
+        <b>What are CDNs? What kind of benefits you get if you use them?</b>
+        <br><br>
+        <p>CDNs, content delivery networks provide you with a lot of benefits: it reduces the load on your server since the content is retrieved from the CDN server instead of your own.</p>
+        <br>
+        <ul>
+          <li>
+          Reduces the load on your server since the content is retrieved from the CDN server instead of your own</li>
+          <li>Possibly faster, since CDN server are distributed all over the globe, so if your server is located in Finland, a person in the US still has a CDN server nearby with the content</li>
+          <li>Browsers cache common frameworks and scripts, so things like jQuery</li>
+        </ul>
+</div>
+
+
+
+
+
+
+
+
+
+      <!-- WRAPPER END -->
     </div>
 
 
 
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/lab41.js"></script>
+    <script type="text/javascript" src="js/websocket_chat.js"></script>
+  </body>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- WRAPPER END -->
-  </div>
-
-
-
-  <script type="text/javascript" src="js/script.js"></script>
-  <script type="text/javascript" src="js/websocket_chat.js"></script>
-</body>
-
-</html>
+  </html>

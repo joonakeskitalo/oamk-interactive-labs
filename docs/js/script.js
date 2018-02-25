@@ -20,7 +20,7 @@ function setVolumeAudio() {
 
 }
 
-
+// Lab 3.4 Video player
 var video = document.getElementById("video");
 
 function togglePlayVideo() {
@@ -30,6 +30,51 @@ function togglePlayVideo() {
 function setVolumeVideo() {
   video.volume = document.getElementById("volume2").value;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Lab 4.1 Canvas Drawing application
+
+// var canvas = document.getElementById('tutorial');
+// var ctx = canvas.getContext('2d');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
