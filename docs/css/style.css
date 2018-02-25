@@ -5,7 +5,7 @@
 }
 
 body {
-  margin-left: 2%;
+  /*margin-left: 2%;*/
   font-family: var(--main-font);
   background-color: var(--main-bg);
   color: var(--main-text);
@@ -149,6 +149,8 @@ ul ol {
 .block {
   transition: all .2s ease-in-out;
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24);
+  width: 50px;
+  height: 50px;
 }
 
 .block:hover {
@@ -188,3 +190,51 @@ ul ol {
 #canvas {
   border: 1px solid black;
 }
+
+
+
+/* Lab 6*/
+
+#flickrSearch {
+  width: 100%;
+  margin: 0.5em;
+  height: 1.5em;  /*height: 100%;*/
+}
+
+#search{
+    margin: 0.5em;
+    height: 2.45em;
+}
+
+
+#flickrResults img{
+/*  width: 15%;
+  height: 50%;*/
+  margin: 2%;
+
+
+  /*display: block;*/
+  max-width:400px;
+  max-height:250px;
+  width: auto;
+  height: auto;
+
+
+
+  transition: all .2s ease-in-out;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+#flickrResults img:hover{
+  /*z-index: 2;*/
+  transition: all .2s ease-in-out;
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+

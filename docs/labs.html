@@ -2,9 +2,6 @@
 <html>
 
 <head>
-
-  <!-- <script type="text/javascript" src="head.js"></script> -->
-
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Portfolio</title>
@@ -13,16 +10,7 @@
   <link rel="stylesheet" href="css/font.css">
   <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/style.css">
-  <!-- jQuery -->
-
-
-  <script
-  src="http://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-  crossorigin="anonymous"></script>
-
-
-
+  <script type="text/javascript" src="js/jquery.js"></script>
 </head>
 
 <body>
@@ -190,7 +178,7 @@
 
 
       </div>
-<div class="cJE p4">
+      <div class="cJE p4">
         <b>What are CDNs? What kind of benefits you get if you use them?</b>
         <br><br>
         <p>CDNs, content delivery networks provide you with a lot of benefits: it reduces the load on your server since the content is retrieved from the CDN server instead of your own.</p>
@@ -201,14 +189,41 @@
           <li>Possibly faster, since CDN server are distributed all over the globe, so if your server is located in Finland, a person in the US still has a CDN server nearby with the content</li>
           <li>Browsers cache common frameworks and scripts, so things like jQuery</li>
         </ul>
-</div>
+      </div>
+
+
+      <div class="cKA p4">
+        <h3>Lab 5.2 More jQuery</h3>
+      </div>
+
+      <div class="cKE p4">
+        <h3>Lab 5.3 Ajax</h3>
+        <button class="button" onclick="parseJson()">Load JSON Data and parse it</button>
+        <div id="jsonContent"></div>
+      </div>
 
 
 
 
 
+      <div class="cLA p2" style=>
+        <h1>Lab 6 Flickr</h1>
+      </div>
+
+      <div class="cLC p4">
+
+        <input class="input" type="text" placeholder="Search by tags" id="flickrSearch">
+      </div>
+
+      <div class="cLG">
+        <button class="button" type="button" id="search">Search</button>
+      </div>
 
 
+
+      <div class="cMA flickr p8">
+        <div id="flickrResults"></div>
+      </div>
 
 
       <!-- WRAPPER END -->
@@ -217,8 +232,10 @@
 
 
     <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript" src="js/lab41.js"></script>
-    <script type="text/javascript" src="js/websocket_chat.js"></script>
+<!--     <script type="text/javascript" src="js/lab41.js"></script>
+    <script type="text/javascript" src="js/lab53.js"></script>
+    <script type="text/javascript" src="js/lab6.js"></script>
+    <script type="text/javascript" src="js/websocket_chat.js"></script> -->
   </body>
 
   </html>
