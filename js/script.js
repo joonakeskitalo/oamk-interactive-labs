@@ -91,7 +91,7 @@ function setEnd(e) {
 
 function draw(e) {
   if (e.buttons !== 1) return
-  ctx.lineTo(pos.x, pos.y);
+    ctx.lineTo(pos.x, pos.y);
   getCoords(e);
   ctx.stroke();
 }
@@ -110,7 +110,7 @@ function jsonCallback(json) {
   $.each(json, function(index, value) {
     console.log(value.name, value.email);
     document.getElementById("jsonContent").innerHTML +=
-      "<a href='mailto:" + value.email + "'>" + value.name + "</a>" + "<br>";
+    "<a href='mailto:" + value.email + "'>" + value.name + "</a>" + "<br>";
   });
 }
 
@@ -127,14 +127,14 @@ $("#search").click(function() {
   document.getElementById("flickrResults").innerHTML = "";
   $("#results").empty();
   $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?", {
-      tags: $("#flickrSearch").val(),
-      tagmode: "any",
-      format: "json"
-    },
-    function(data) {
-      $.each(data.items, function(i, item) {
-        $("<img>").attr("src", item.media.m).appendTo("#flickrResults");
-        if (i == 30) return false;
-      });
+    tags: $("#flickrSearch").val(),
+    tagmode: "any",
+    format: "json"
+  },
+  function(data) {
+    $.each(data.items, function(i, item) {
+      $("<img>").attr("src", item.media.m).appendTo("#flickrResults");
+      if (i == 30) return false;
     });
+  });
 });
