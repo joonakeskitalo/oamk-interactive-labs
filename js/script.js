@@ -105,6 +105,19 @@ function draw(e) {
 }
 
 
+
+
+// Lab 5.2
+$(function() {
+  $("#AddName").click(function(){
+    $('#list_space').append("<br>" + $('#name_to_add').val());
+  });
+});
+
+
+
+
+
 // Lab 5.3
 function jsonCallback(json) {
   $.each(json, function(index, value) {
