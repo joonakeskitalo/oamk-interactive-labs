@@ -145,6 +145,11 @@ ul ol {
 
 /* Styling */
 
+#block1{background-color: cyan;}
+#block2{background-color: magenta;}
+#block3{background-color: yellow;}
+#block4{background-color: black;}
+
 .block {
   transition: all .2s ease-in-out;
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24);

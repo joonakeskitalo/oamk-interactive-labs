@@ -7,36 +7,29 @@ function addName() {
 
 
 // Lab 2.5
-
 function addName() {
   var name = document.getElementById("nameInput").value;
   var list = document.getElementById("list");
   list.innerHTML += "<br>" + name;
 }
-
-
+9
 
 
 // Lab 3.1 WebSocket Chat
-
 var connection = new WebSocket("ws://obscure-waters-98157.herokuapp.com");
 
-// Log errors
 connection.onerror = function(error) {
   console.log('WebSocket Error ' + error);
 };
 
-// Log messages from the server
 connection.onmessage = function(e) {
   console.log('Server: ' + e.data);
 };
 
 function sendMessage() {
   var myform = document.getElementById("chatForm").value;
-  // console.log(myform);
   connection.send(myform);
 }
-
 window.console = {
   log: function(str) {
     var node = document.createElement("div");
@@ -44,7 +37,6 @@ window.console = {
     document.getElementById("myLog").appendChild(node);
   }
 }
-
 
 
 // Lab 3.3 Audio player
@@ -99,23 +91,18 @@ function setEnd(e) {
 
 function draw(e) {
   if (e.buttons !== 1) return
-    ctx.lineTo(pos.x, pos.y);
+  ctx.lineTo(pos.x, pos.y);
   getCoords(e);
   ctx.stroke();
 }
 
 
-
-
 // Lab 5.2
 $(function() {
-  $("#AddName").click(function(){
+  $("#AddName").click(function() {
     $('#list_space').append("<br>" + $('#name_to_add').val());
   });
 });
-
-
-
 
 
 // Lab 5.3
@@ -123,7 +110,7 @@ function jsonCallback(json) {
   $.each(json, function(index, value) {
     console.log(value.name, value.email);
     document.getElementById("jsonContent").innerHTML +=
-    "<a href='mailto:" + value.email + "'>" + value.name + "</a>" + "<br>";
+      "<a href='mailto:" + value.email + "'>" + value.name + "</a>" + "<br>";
   });
 }
 
@@ -140,14 +127,14 @@ $("#search").click(function() {
   document.getElementById("flickrResults").innerHTML = "";
   $("#results").empty();
   $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?", {
-    tags: $("#flickrSearch").val(),
-    tagmode: "any",
-    format: "json"
-  },
-  function(data) {
-    $.each(data.items, function(i, item) {
-      $("<img>").attr("src", item.media.m).appendTo("#flickrResults");
-      if (i == 30) return false;
+      tags: $("#flickrSearch").val(),
+      tagmode: "any",
+      format: "json"
+    },
+    function(data) {
+      $.each(data.items, function(i, item) {
+        $("<img>").attr("src", item.media.m).appendTo("#flickrResults");
+        if (i == 30) return false;
+      });
     });
-  });
 });
