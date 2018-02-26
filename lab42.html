@@ -2,86 +2,18 @@
 <html>
 
 <head>
-    <title>Lab 4.2</title>
-    <style type="text/css" media="screen">
-    #canvas {
-        border: 1px solid black;
-    }
-    </style>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Lab 4.2</title>
+  <script type="text/javascript" src="js/lab42.js"></script>
 </head>
 
 <body>
-    <canvas id="canvas" width="500" height="500">
-        Canvas not supported
-    </canvas>
-    <p>Score: <span id="count"></span></p>
-    <br>
-    <p>Misses: <span id="miss"></span></p>
-    <script type="text/javascript">
-    window.onload = function() {
-        canvas = document.getElementById("canvas");
-        context = canvas.getContext("2d");
-
-        var placeholder = new Array();
-
-        var hits = 0;
-        var misses = 0;
-
-        canvas.onmousedown = function(e) {
-            var rect = canvas.getBoundingClientRect();
-            var x = e.clientX - rect.left;
-            var y = e.clientY - rect.top;
-
-
-            var i = placeholder.length - 1;
-
-            if (collision(placeholder[i].x, placeholder[i].y, 40, 40, x, y)) {
-                hits = hits + 1
-                var s = document.getElementById("count").innerHTML = hits;
-            } else {
-                misses = misses + 1;
-                var m = document.getElementById("miss").innerHTML = misses;
-            }
-
-
-
-        }
-
-
-
-
-        function drawSquare() {
-            placeholder = [];
-
-            var square = new Object();
-
-            square.x = Math.floor(Math.random() * 500 - 22.5);
-            square.y = Math.floor(Math.random() * 500 - 22.5);
-
-            context.clearRect(0, 0, 500, 500);
-            context.fillStyle = "red";
-            context.fillRect(square.x, square.y, 40, 40);
-
-            placeholder.push(square);
-        }
-
-
-        function collision(rectX, rectY, rectWidth, rectHeight, mouseX, mouseY) {
-            if (((rectX <= mouseX) &&
-                    (rectX + rectWidth >= mouseX)) &&
-                ((rectY <= mouseY) &&
-                    (rectY + rectHeight >= mouseY))) {
-                return true;
-            } else {
-                return false;
-            }
-        }
-
-
-        setInterval(drawSquare, 2000);
-
-    }
-    </script>
+  <button id="game_button" onclick="load()">Click to play</button>
+  <h3>Score: <span id="score">0</span></h3>
+  <h3> Time: <span id="timer">10</span></h3>
+  <canvas onclick="capture(event)" id="canvas" width=750 height=450>
+  </canvas>
 </body>
 
 </html>

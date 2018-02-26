@@ -5,7 +5,6 @@
 }
 
 body {
-  /*margin-left: 2%;*/
   font-family: var(--main-font);
   background-color: var(--main-bg);
   color: var(--main-text);
@@ -192,49 +191,30 @@ ul ol {
 }
 
 
-
 /* Lab 6*/
 
 #flickrSearch {
   width: 100%;
   margin: 0.5em;
-  height: 1.5em;  /*height: 100%;*/
+  height: 1.5em;
 }
 
-#search{
-    margin: 0.5em;
-    height: 2.45em;
+#search {
+  margin: 0.5em;
+  height: 2.45em;
 }
 
-
-#flickrResults img{
-/*  width: 15%;
-  height: 50%;*/
+#flickrResults img {
   margin: 2%;
-
-
-  /*display: block;*/
-  max-width:400px;
-  max-height:250px;
+  max-width: 400px;
+  max-height: 250px;
   width: auto;
   height: auto;
-
-
-
   transition: all .2s ease-in-out;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
-#flickrResults img:hover{
-  /*z-index: 2;*/
+#flickrResults img:hover {
   transition: all .2s ease-in-out;
   transform: scale(1.1);
 }
-
-
-
-
-
-
-
-

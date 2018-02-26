@@ -6,6 +6,17 @@ function addName() {
 }
 
 
+// Lab 2.5
+
+function addName() {
+  var name = document.getElementById("nameInput").value;
+  var list = document.getElementById("list");
+  list.innerHTML += "<br>" + name;
+}
+
+
+
+
 // Lab 3.1 WebSocket Chat
 
 var connection = new WebSocket("ws://obscure-waters-98157.herokuapp.com");
@@ -83,15 +94,15 @@ function setStart(e) {
 }
 
 function setEnd(e) {
-    ctx.closePath();
-  }
+  ctx.closePath();
+}
 
-  function draw(e) {
-    if (e.buttons !== 1) return
-      ctx.lineTo(pos.x, pos.y);
-    getCoords(e);
-    ctx.stroke();
-  }
+function draw(e) {
+  if (e.buttons !== 1) return
+    ctx.lineTo(pos.x, pos.y);
+  getCoords(e);
+  ctx.stroke();
+}
 
 
 // Lab 5.3
